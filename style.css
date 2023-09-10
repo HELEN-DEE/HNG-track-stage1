@@ -1,23 +1,67 @@
+/* ! Google Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 #card {
-    width: 40%;
-   margin: auto;
+  width: 90%;
+  padding: 20px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #451952;
+  border: 5px solid #bc7af9;
 }
+
+#card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+}
+
+.details {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  #card {
+    width: 40%;
+  }
+
+  #card img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 #card-name {
-    background-color: lightgrey;
-    width: 500px;
-    text-align: center;
-    border-radius: 10%;
-    border: 3px solid darkgrey;
+  width: 500px;
+  text-align: center;
+  border-radius: 10%;
 }
 #card-name h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 img {
-    border-radius: 15%;
+  border-radius: 15%;
+}
+
+a {
+  color: red;
 }
